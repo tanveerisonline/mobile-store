@@ -69,7 +69,7 @@ const P = (
 function buildProducts(): Product[] {
   return [
     P("p1", "iPhone 15 Pro Max", "Apple", "c1", 1199, 14, 231,
-      { body: "#4b515d", screenA: "#0e2e38", screenB: "#0fa8a0" },
+      { body: "#4b515d", screenA: "#0e1e33", screenB: "#2f6bff" },
       { display: '6.7" LTPO OLED · 120Hz', chip: "A17 Pro", ram: "8 GB", storage: "256 GB", battery: "4,441 mAh", camera: "48 MP triple + 5× tele", os: "iOS 17", fiveG: true, weight: "221 g" },
       "The first iPhone built in aerospace-grade titanium. A17 Pro unlocks console-class gaming and the most powerful camera system Apple has ever shipped.",
       ["Titanium unibody, 19% lighter", "A17 Pro — 3nm console-class GPU", "5× telephoto with sensor-shift OIS", "USB-C 3 with 20 Gb/s transfer"],

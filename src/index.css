@@ -1,21 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #f1f3f1;
-  --color-mist: #e7ebe8;
-  --color-ink: #0c1a1e;
-  --color-ink2: #12272d;
-  --color-ink3: #1b3a43;
-  --color-line: #24434d;
-  --color-linel: #dce3df;
-  --color-volt: #0fa8a0;
-  --color-voltd: #0b8781;
-  --color-voltl: #9fe3de;
-  --color-tang: #ff6b2c;
-  --color-gold: #f2b33d;
-  --color-ok: #1e9e5a;
-  --color-warn: #d08700;
-  --color-bad: #d64545;
+  /* ---- VOLT "Circuit" palette ---- */
+  --color-paper: #eef2f7;
+  --color-mist: #e2e9f3;
+  --color-ink: #0b1b33;
+  --color-ink2: #102544;
+  --color-ink3: #1b3a66;
+  --color-line: #23406b;
+  --color-linel: #d9e1ec;
+  --color-volt: #2f6bff;
+  --color-voltd: #1e4fd6;
+  --color-voltl: #a5c1ff;
+  --color-tang: #ff5a3c;
+  --color-gold: #ffc53d;
+  --color-ok: #17a56b;
+  --color-warn: #e8a110;
+  --color-bad: #e23b3b;
   --font-display: "Unbounded", sans-serif;
   --font-body: "Manrope", sans-serif;
 }
@@ -31,8 +32,8 @@ body {
 }
 
 ::selection {
-  background: #0fa8a0;
-  color: #0c1a1e;
+  background: #2f6bff;
+  color: #ffffff;
 }
 
 .font-d {
@@ -50,21 +51,21 @@ body {
 /* ---------- ambient backgrounds ---------- */
 .grid-dark {
   background-image:
-    linear-gradient(rgba(159, 227, 222, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(159, 227, 222, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(165, 193, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(165, 193, 255, 0.06) 1px, transparent 1px);
   background-size: 34px 34px;
 }
 .grid-light {
   background-image:
-    linear-gradient(rgba(12, 26, 30, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(12, 26, 30, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(11, 27, 51, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 27, 51, 0.05) 1px, transparent 1px);
   background-size: 34px 34px;
 }
 .glow-volt {
-  background: radial-gradient(closest-side, rgba(15, 168, 160, 0.35), transparent 70%);
+  background: radial-gradient(closest-side, rgba(47, 107, 255, 0.42), transparent 70%);
 }
 .glow-tang {
-  background: radial-gradient(closest-side, rgba(255, 107, 44, 0.3), transparent 70%);
+  background: radial-gradient(closest-side, rgba(255, 90, 60, 0.34), transparent 70%);
 }
 
 /* ---------- scroll reveal ---------- */
@@ -95,12 +96,12 @@ body {
   to { background-position: 400px 0; }
 }
 .skeleton {
-  background: linear-gradient(90deg, rgba(12, 26, 30, 0.06) 25%, rgba(12, 26, 30, 0.12) 50%, rgba(12, 26, 30, 0.06) 75%);
+  background: linear-gradient(90deg, rgba(11, 27, 51, 0.06) 25%, rgba(11, 27, 51, 0.13) 50%, rgba(11, 27, 51, 0.06) 75%);
   background-size: 800px 100%;
   animation: shimmer 1.4s linear infinite;
 }
 .skeleton-dark {
-  background: linear-gradient(90deg, rgba(159, 227, 222, 0.06) 25%, rgba(159, 227, 222, 0.14) 50%, rgba(159, 227, 222, 0.06) 75%);
+  background: linear-gradient(90deg, rgba(165, 193, 255, 0.07) 25%, rgba(165, 193, 255, 0.16) 50%, rgba(165, 193, 255, 0.07) 75%);
   background-size: 800px 100%;
   animation: shimmer 1.4s linear infinite;
 }
@@ -202,8 +203,8 @@ body {
 }
 
 @keyframes boltPulse {
-  0%, 100% { filter: drop-shadow(0 0 0px rgba(15, 168, 160, 0)); transform: scale(1); }
-  50% { filter: drop-shadow(0 0 18px rgba(15, 168, 160, 0.65)); transform: scale(1.06); }
+  0%, 100% { filter: drop-shadow(0 0 0px rgba(47, 107, 255, 0)); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 18px rgba(47, 107, 255, 0.7)); transform: scale(1.06); }
 }
 .bolt-pulse {
   animation: boltPulse 1.4s ease-in-out infinite;
@@ -230,15 +231,15 @@ body {
   @apply w-full bg-white border border-linel px-3.5 py-2.5 text-[15px] font-medium text-ink placeholder:text-ink/35 outline-none transition-all duration-200;
 }
 .field:focus {
-  border-color: #0fa8a0;
-  box-shadow: 0 0 0 3px rgba(15, 168, 160, 0.18);
+  border-color: #2f6bff;
+  box-shadow: 0 0 0 3px rgba(47, 107, 255, 0.18);
 }
 .field-dark {
   @apply w-full bg-ink2 border border-line px-3.5 py-2.5 text-[15px] font-medium text-paper placeholder:text-paper/30 outline-none transition-all duration-200;
 }
 .field-dark:focus {
-  border-color: #0fa8a0;
-  box-shadow: 0 0 0 3px rgba(15, 168, 160, 0.25);
+  border-color: #2f6bff;
+  box-shadow: 0 0 0 3px rgba(47, 107, 255, 0.3);
 }
 
 .tab-safe {
@@ -250,7 +251,7 @@ body {
 }
 .card-lift:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 44px -18px rgba(12, 26, 30, 0.28);
+  box-shadow: 0 22px 44px -18px rgba(11, 27, 51, 0.32);
 }
 
 .phone-tilt {
@@ -270,7 +271,7 @@ body {
   @apply border-t border-linel transition-colors;
 }
 .tbl tbody tr:hover {
-  background: rgba(15, 168, 160, 0.05);
+  background: rgba(47, 107, 255, 0.05);
 }
 
 @media (prefers-reduced-motion: reduce) {

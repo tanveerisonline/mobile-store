@@ -184,7 +184,7 @@ function CategoryRow() {
                 onClick={() => navigate(`/shop?cat=${c.id}`)}
                 className="group min-w-[168px] bg-white border border-linel p-5 text-left card-lift hover:border-volt transition-colors"
               >
-                <span className="w-11 h-11 grid place-items-center bg-ink text-volt notch-sm mb-4 group-hover:bg-volt group-hover:text-ink transition-colors">
+                <span className="w-11 h-11 grid place-items-center bg-ink text-voltl notch-sm mb-4 group-hover:bg-volt group-hover:text-white transition-colors">
                   <Icon name={c.icon} size={20} />
                 </span>
                 <p className="font-d text-[15px] font-bold">{c.name}</p>
@@ -391,18 +391,19 @@ function Newsletter() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-16">
       <Reveal>
-        <div className="relative overflow-hidden bg-volt text-ink notch p-8 sm:p-12 grid md:grid-cols-2 gap-8 items-center grid-light">
-          <div>
+        <div className="relative overflow-hidden bg-volt text-white notch p-8 sm:p-12 grid md:grid-cols-2 gap-8 items-center">
+          <div className="absolute inset-0 grid-dark opacity-60" />
+          <div className="relative">
             <p className="font-d text-2xl sm:text-3xl font-bold leading-tight">First dibs on every drop.</p>
-            <p className="mt-2 text-[15px] font-bold text-ink/60">One email per launch. No spam — rate-limited like everything else here.</p>
+            <p className="mt-2 text-[15px] font-bold text-white/70">One email per launch. No spam — rate-limited like everything else here.</p>
           </div>
           {done ? (
-            <div className="flex items-center gap-3 bg-ink text-paper px-5 py-4 notch-sm">
-              <Icon name="check" size={20} className="text-volt" />
+            <div className="relative flex items-center gap-3 bg-ink text-paper px-5 py-4 notch-sm">
+              <Icon name="check" size={20} className="text-voltl" />
               <p className="text-sm font-extrabold">Subscribed. Watch your inbox for the next drop.</p>
             </div>
           ) : (
-            <form onSubmit={submit} className="flex flex-col sm:flex-row gap-3">
+            <form onSubmit={submit} className="relative flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 required

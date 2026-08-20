@@ -68,7 +68,7 @@ export function DashboardShell({ route, children }: { route: Route; children: Re
   const sidebar = (
     <div className="flex flex-col h-full">
       <button onClick={() => { navigate("/"); setNavOpen(false); }} className="flex items-center gap-2 px-5 h-16 border-b border-line shrink-0 group">
-        <span className="w-8 h-8 grid place-items-center bg-volt text-ink notch-sm">
+        <span className="w-8 h-8 grid place-items-center bg-volt text-white notch-sm">
           <Icon name="bolt" size={17} />
         </span>
         <span className="font-d font-bold text-[15px] text-paper">

@@ -313,7 +313,7 @@ function fromProduct(p: Product | null, cats: { id: string }[]): PForm {
   if (!p) {
     return {
       name: "", brand: "", categoryId: cats[0]?.id ?? "", price: "", compareAt: "", stock: "10", featured: false, status: "active",
-      dealPercent: "", dealDays: "2", body: "#33363d", screenA: "#12262e", screenB: "#0fa8a0", galleryText: "",
+      dealPercent: "", dealDays: "2", body: "#33363d", screenA: "#12262e", screenB: "#2f6bff", galleryText: "",
       display: "", chip: "", ram: "", storage: "", battery: "", camera: "", os: "", fiveG: true, weight: "",
       description: "", highlightsText: "",
     };
@@ -507,7 +507,7 @@ function ProductEditor({ initial, onClose }: { initial: Product | null; onClose:
 
         <div className="md:sticky md:top-0 h-fit">
           <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-ink/45 mb-2.5">Live preview</p>
-          <div className="border border-linel grid place-items-center p-4" style={{ background: `linear-gradient(150deg, ${f.screenA}22, ${f.screenB}26), #e9ede9` }}>
+          <div className="border border-linel grid place-items-center p-4" style={{ background: `linear-gradient(150deg, ${f.screenA}22, ${f.screenB}26), #e8edf5` }}>
             <PhoneArt visual={{ body: f.body, screenA: f.screenA, screenB: f.screenB }} tilt={-6} className="h-56" />
           </div>
           <div className="bg-white border border-linel p-4 mt-3 space-y-2">

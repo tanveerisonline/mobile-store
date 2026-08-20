@@ -11,7 +11,7 @@ const MAX_ENTRIES = 300;
 
 const LEVEL_STYLE: Record<LogLevel, string> = {
   DEBUG: "color:#8a9ba0;font-weight:700",
-  INFO: "color:#0fa8a0;font-weight:700",
+  INFO: "color:#2f6bff;font-weight:700",
   WARN: "color:#d08700;font-weight:700",
   SECURITY: "color:#d64545;font-weight:700",
 };
