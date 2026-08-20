@@ -85,7 +85,7 @@ export function PhoneTile({
   children?: ReactNode;
 }) {
   return (
-    <div className={cx("relative overflow-hidden grid place-items-center grid-light", height, className)} style={{ background: `linear-gradient(150deg, ${visual.screenA}18, ${visual.screenB}22), #e9ede9` }}>
+    <div className={cx("relative overflow-hidden grid place-items-center grid-light", height, className)} style={{ background: `linear-gradient(150deg, ${visual.screenA}18, ${visual.screenB}22), #e8edf5` }}>
       <div className="absolute inset-0 grid-dark opacity-[0.35]" style={{ maskImage: "radial-gradient(closest-side, black, transparent)" }} />
       <PhoneArt visual={visual} tilt={tilt} className="h-[88%] phone-tilt drop-shadow-xl" />
       {children}

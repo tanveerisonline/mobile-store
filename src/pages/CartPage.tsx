@@ -377,7 +377,7 @@ function PayOption({ active, icon, title, sub, onClick }: { active: boolean; ico
         active ? "border-volt bg-volt/8" : "border-linel hover:border-ink/30"
       )}
     >
-      <span className={cx("w-10 h-10 grid place-items-center notch-sm", active ? "bg-volt text-ink" : "bg-mist text-ink/50")}>
+      <span className={cx("w-10 h-10 grid place-items-center notch-sm", active ? "bg-volt text-white" : "bg-mist text-ink/50")}>
         <Icon name={icon} size={18} />
       </span>
       <span>

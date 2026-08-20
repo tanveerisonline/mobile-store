@@ -173,7 +173,7 @@ export function ShopPage({ dealsOnly }: { dealsOnly?: boolean }) {
               </select>
               <Button variant="outline" className="!border-paper/25 !text-paper lg:!hidden" icon="filter" onClick={() => setSheetOpen(true)}>
                 Filters
-                {chips.length > 0 && <span className="ml-1.5 px-1.5 py-0.5 bg-volt text-ink text-[10px] font-extrabold rounded-full">{chips.length}</span>}
+                {chips.length > 0 && <span className="ml-1.5 px-1.5 py-0.5 bg-volt text-white text-[10px] font-extrabold rounded-full">{chips.length}</span>}
               </Button>
             </div>
           </div>

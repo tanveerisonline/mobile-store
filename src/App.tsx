@@ -21,7 +21,7 @@ function BootScreen() {
     <div className="min-h-dvh bg-ink grid place-items-center grid-dark relative overflow-hidden">
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] glow-volt opacity-60" />
       <div className="text-center relative">
-        <span className="inline-grid place-items-center w-20 h-20 bg-volt text-ink notch bolt-pulse mb-6">
+        <span className="inline-grid place-items-center w-20 h-20 bg-volt text-white notch bolt-pulse mb-6">
           <Icon name="bolt" size={42} />
         </span>
         <p className="font-d text-2xl font-bold text-paper tracking-tight">

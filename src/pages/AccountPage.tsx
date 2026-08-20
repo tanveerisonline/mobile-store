@@ -160,7 +160,7 @@ export function AuthPage() {
             <>
               <Input label="Confirm password" type="password" value={pw2} onChange={(e) => setPw2(e.target.value)} placeholder="••••••••" required />
               <label className="flex items-start gap-2.5 text-[13px] font-bold text-ink/60 cursor-pointer">
-                <input type="checkbox" checked={terms} onChange={(e) => setTerms(e.target.checked)} className="mt-0.5 accent-[#0fa8a0]" />
+                <input type="checkbox" checked={terms} onChange={(e) => setTerms(e.target.checked)} className="mt-0.5 accent-[#2f6bff]" />
                 I accept the demo terms — no real payments, no real data leaves this browser.
               </label>
             </>
@@ -211,7 +211,7 @@ export function AccountPage() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
       <div className="bg-ink text-paper p-6 sm:p-7 notch grid-dark relative overflow-hidden mb-8 flex flex-wrap items-center gap-5">
         <div className="absolute -right-10 -top-20 w-64 h-64 glow-volt" />
-        <span className="w-16 h-16 grid place-items-center bg-volt text-ink font-d text-xl font-bold rounded-full relative">
+        <span className="w-16 h-16 grid place-items-center bg-volt text-white font-d text-xl font-bold rounded-full relative">
           {user.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}
         </span>
         <div className="relative grow">

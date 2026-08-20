@@ -46,13 +46,13 @@ function Header({ route }: { route: Route }) {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="bg-volt text-ink text-center text-[11.5px] font-extrabold tracking-wide px-3 py-1.5">
+      <div className="bg-volt text-white text-center text-[11.5px] font-extrabold tracking-wide px-3 py-1.5">
         ⚡ {settings.announcement}
       </div>
       <div className="bg-ink text-paper border-b border-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-4 h-16">
           <button onClick={() => navigate("/")} className="flex items-center gap-2 shrink-0 group" aria-label="VOLT Mobile home">
-            <span className="w-9 h-9 grid place-items-center bg-volt text-ink notch-sm group-hover:bg-voltl transition-colors">
+            <span className="w-9 h-9 grid place-items-center bg-volt text-white notch-sm group-hover:bg-voltd transition-colors">
               <Icon name="bolt" size={20} />
             </span>
             <span className="font-d font-bold text-[17px] tracking-tight leading-none">
@@ -92,7 +92,7 @@ function Header({ route }: { route: Route }) {
             <button onClick={() => setCartOpen(true)} className="relative p-2.5 text-paper/70 hover:text-volt transition-colors" aria-label="Cart">
               <Icon name="cart" size={20} />
               {cartCount > 0 && (
-                <span className="absolute top-1 right-1 min-w-[16px] h-4 px-0.5 grid place-items-center bg-volt text-ink text-[10px] font-extrabold rounded-full pop-in">
+                <span className="absolute top-1 right-1 min-w-[16px] h-4 px-0.5 grid place-items-center bg-volt text-white text-[10px] font-extrabold rounded-full pop-in">
                   {cartCount}
                 </span>
               )}
@@ -186,7 +186,7 @@ function MobileTabBar({ route }: { route: Route }) {
           <span className="relative">
             <Icon name="cart" size={20} />
             {cartCount > 0 && (
-              <span className="absolute -top-1.5 -right-2 min-w-[15px] h-[15px] px-0.5 grid place-items-center bg-volt text-ink text-[9px] font-extrabold rounded-full">
+              <span className="absolute -top-1.5 -right-2 min-w-[15px] h-[15px] px-0.5 grid place-items-center bg-volt text-white text-[9px] font-extrabold rounded-full">
                 {cartCount}
               </span>
             )}
@@ -349,7 +349,7 @@ export function ProductCard({ product, compact }: { product: Product; compact?: 
             disabled={product.stock === 0}
             className={cx(
               "w-9 h-9 grid place-items-center notch-sm transition-all active:scale-90",
-              product.stock === 0 ? "bg-ink/10 text-ink/30" : "bg-ink text-volt hover:bg-volt hover:text-ink"
+              product.stock === 0 ? "bg-ink/10 text-ink/30" : "bg-ink text-voltl hover:bg-volt hover:text-white"
             )}
             aria-label="Add to cart"
           >
@@ -375,7 +375,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <span className="w-9 h-9 grid place-items-center bg-volt text-ink notch-sm">
+            <span className="w-9 h-9 grid place-items-center bg-volt text-white notch-sm">
               <Icon name="bolt" size={20} />
             </span>
             <span className="font-d font-bold text-[17px]">VOLT·MOBILE</span>

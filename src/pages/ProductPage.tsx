@@ -71,7 +71,7 @@ function ProductDetail({ product }: { product: Product }) {
         {/* gallery */}
         <div>
           <Reveal>
-            <div className="relative overflow-hidden notch border border-linel grid place-items-center grid-light" style={{ background: `linear-gradient(150deg, ${visual.screenA}20, ${visual.screenB}26), #e9ede9` }}>
+            <div className="relative overflow-hidden notch border border-linel grid place-items-center grid-light" style={{ background: `linear-gradient(150deg, ${visual.screenA}20, ${visual.screenB}26), #e8edf5` }}>
               <div className="absolute inset-0 grid-dark opacity-40" style={{ maskImage: "radial-gradient(closest-side, black, transparent)" }} />
               <div className="absolute top-4 left-4 flex flex-col gap-2 items-start z-10">
                 {product.deal && <Badge tone="tang">-{product.deal.percent}% flash deal</Badge>}
@@ -92,7 +92,7 @@ function ProductDetail({ product }: { product: Product }) {
                     "w-14 h-14 border-2 transition-all grid place-items-center",
                     n === colorIdx ? "border-volt scale-105" : "border-linel hover:border-ink/30"
                   )}
-                  style={{ background: `linear-gradient(150deg, ${product.visual.screenA}22, ${g}55), #e9ede9` }}
+                  style={{ background: `linear-gradient(150deg, ${product.visual.screenA}22, ${g}55), #e8edf5` }}
                 >
                   <span className="w-6 h-9 rounded-[4px] border border-white/40" style={{ background: g }} />
                 </button>

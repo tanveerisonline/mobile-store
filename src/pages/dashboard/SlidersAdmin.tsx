@@ -42,11 +42,11 @@ function fromSlide(s: Slide | null): SlideForm {
     link: s?.link ?? "/shop",
     mode: s?.image ? "image" : "art",
     image: s?.image ?? IMAGE_PRESETS[0].src,
-    from: s?.art?.from ?? "#0c1a1e",
+    from: s?.art?.from ?? "#0b1b33",
     to: s?.art?.to ?? "#1b3a43",
     body: s?.art?.body ?? "#33363d",
     screenA: s?.art?.screenA ?? "#12262e",
-    screenB: s?.art?.screenB ?? "#0fa8a0",
+    screenB: s?.art?.screenB ?? "#2f6bff",
     active: s?.active ?? true,
   };
 }
@@ -225,10 +225,10 @@ export function SlidersAdmin({ route }: { route: Route }) {
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
               <div className="relative p-5 max-w-[60%]">
-                {f.badge && <span className="inline-block bg-volt text-ink text-[9px] font-extrabold uppercase tracking-wide px-2 py-0.5 mb-2.5">{f.badge}</span>}
+                {f.badge && <span className="inline-block bg-volt text-white text-[9px] font-extrabold uppercase tracking-wide px-2 py-0.5 mb-2.5">{f.badge}</span>}
                 <p className="font-d text-lg font-bold text-paper leading-tight">{f.title || "Slide title"}</p>
                 <p className="text-[11px] font-semibold text-paper/55 mt-1.5 line-clamp-2">{f.subtitle || "Subtitle shows here."}</p>
-                <span className="inline-block mt-3 bg-volt text-ink text-[10px] font-extrabold px-2.5 py-1.5 notch-sm">{f.cta || "Shop now"} →</span>
+                <span className="inline-block mt-3 bg-volt text-white text-[10px] font-extrabold px-2.5 py-1.5 notch-sm">{f.cta || "Shop now"} →</span>
               </div>
             </div>
           </div>

@@ -28,7 +28,7 @@ export function Reveal({
 type BtnVariant = "primary" | "dark" | "tang" | "outline" | "ghost" | "danger" | "voltline";
 
 const BTN_STYLES: Record<BtnVariant, string> = {
-  primary: "bg-volt text-ink font-extrabold hover:bg-voltd active:scale-[0.97]",
+  primary: "bg-volt text-white font-extrabold hover:bg-voltd active:scale-[0.97]",
   dark: "bg-ink text-paper font-bold hover:bg-ink3 active:scale-[0.97]",
   tang: "bg-tang text-white font-extrabold hover:bg-[#e85a1f] active:scale-[0.97]",
   outline: "border-[1.5px] border-ink/25 text-ink font-bold hover:border-ink hover:bg-ink/5 active:scale-[0.97]",
@@ -84,7 +84,7 @@ export function Spinner({ size = 18, light = true }: { size?: number; light?: bo
   return (
     <svg viewBox="0 0 24 24" width={size} height={size} className="spin-slow" fill="none" aria-hidden>
       <circle cx="12" cy="12" r="9" stroke={light ? "rgba(255,255,255,0.35)" : "rgba(12,26,30,0.2)"} strokeWidth="3" />
-      <path d="M12 3a9 9 0 0 1 9 9" stroke={light ? "#fff" : "#0c1a1e"} strokeWidth="3" strokeLinecap="round" />
+      <path d="M12 3a9 9 0 0 1 9 9" stroke={light ? "#fff" : "#0b1b33"} strokeWidth="3" strokeLinecap="round" />
     </svg>
   );
 }
